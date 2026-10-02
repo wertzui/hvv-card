@@ -815,3 +815,11 @@ class HvvCardEditor extends LitElement {
 }
 
 customElements.define("hvv-card-editor", HvvCardEditor);
+
+window.customCards = window.customCards || [];
+window.customCards.push({
+    type: "hvv-card",
+    name: "HVV Card",
+    description: "HVV departures",
+    preview: false,
+});
